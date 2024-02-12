@@ -60,7 +60,7 @@ fun App(shareManager: ShareManager) {
                             val rawData = data.load(it)
                             val imageBitmap = rawData.toImageBitmap()
                             println("RawData:${(rawData.size / 1024f).roundToInt()}kB, ImageMemSize:${imageBitmap.sizeKB()}kB, Resolution:${imageBitmap.width}x${imageBitmap.height} ")
-                            row.add(rawData.toImageBitmap())
+                            row.add(imageBitmap)
                         }
                     }
                 }
